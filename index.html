@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Home</title>
+<style>
+.heads {
+  padding: 65px;
+  text-align: center;
+  background: rgb(116, 5, 77);
+  color: white;
+}
+
+.heads h1 {
+  font-size: 40px;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav a.right {
+  float: right;
+}
+
+.product{
+    color: wheat;
+    background-color: rgba(171, 93, 29, 0.896);
+    height: 20px;
+    width: 150px;
+}
+
+.nav a:hover {
+  background-color: rgb(119, 4, 52);
+  color: rgb(239, 229, 234);
+}
+.nav {
+  overflow: hidden;
+  background-color: rgb(32, 143, 15);
+}
+
+.img{
+    height: 220px;width: 150px;
+}
+.price{
+    color: rgb(25, 24, 22);
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#img1").click(function(){
+    $("#t").toggle();
+  });
+  $("#img2").click(function(){
+    $("#c").toggle();
+  });
+  $("#img3").click(function(){
+    $("#j").toggle();
+  });
+});
+</script>
+    </head>
+    <body>
+        <div class="heads">
+            <h1>welcome to website</h1>
+            
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Create account</a>
+            <a href="shop.html">login</a>
+        </div>
+        
+         
+      <h3> Create account</h3>
+
+      <label for="Name1"> User Name:</label>
+      <input type="text" placeholder="" id="Name1" name="Name1"><br>
+
+      <br><label for="SId1"> User Id</label>
+      <input type="text" placeholder="" id="SId1" name="SId1"><br>
+
+
+      <br><label for="sEmail"> user Email:</label>
+      <input type="text" placeholder="" id="sEmail" name="sEmail"><br>
+
+     <br> <label for="password1"> password:</label>
+      <input type="text" placeholder="" id="password1" name="password1"><br>
+
+
+      <br><label for="sDate" > Date of Birth</label><br>
+      <input  type="date" id="sDate" name="sDate"  ><br>
+
+
+
+
+
+     <br> <button type = "button" data-role="button" id="bSave" style="background-color: #3388cc ; color: #ededed"
+              data-theme="b">Save</button>
+
+    
+    </body>
+</html>
